@@ -11,11 +11,11 @@
 - Codecs
 
 ## WHAT I DO
-- use the pre-trained Chinese word vector provided by Shen Li, Zhe Zhao, Renfen Hu, Wensi Li, Tao Liu, Xiaoyong Du, Analogical Reasoning on Chinese Morphological and Semantic Relations, ACL 2018.
+- Use the pre-trained Chinese word vector provided by Shen Li, Zhe Zhao, Renfen Hu, Wensi Li, Tao Liu, Xiaoyong Du, Analogical Reasoning on Chinese Morphological and Semantic Relations, ACL 2018.
 
-- use Top 20 TD-IDF words as Features 
+- Use Top 20 TD-IDF words as Features 
 
-- slightly changes in codes
+- Slightly changes in codes
 
 ## FURTURE
 
