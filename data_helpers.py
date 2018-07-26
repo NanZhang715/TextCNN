@@ -40,7 +40,7 @@ def load_word2vector(filename):
     Word2Vector_embed = []
     embedding_dict = {}
 
-    with open(filename, 'r') as file:
+    with codecs.open(filename, 'r', 'utf-8') as file:
         for line in file.readlines():
             row = line.strip().split(' ')
             vocab_word = row[0]
