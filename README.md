@@ -9,7 +9,7 @@
 
 ## FURTURE
 
-- Top 20 tag words are used to classification so far, try to extract more words is worth trying
+- Top 20 tag words are used to classification so far, try to extract more words 
 - Use title/description/keywords to enrich the feature, which would perform better in terms of representing website.
 - RNN/LSTM 
 
