@@ -13,7 +13,7 @@
 ## FURTURE
 
 - Top 20 tag words are used to classification so far, try to extract more words 
-- Use title/description/keywords to enrich the feature, which would perform better in terms of representing website. Since a website is consist of sevral div sections, which contains texts, images and links. Due to This word focuses on text information, each section can be represented by different embeddings, and ensamble them togather as the feature map. But the potantial risk is the exponential computation consumption, which lowering the effecicency. It is a tradeoff to balance of the complexcity and efficiency.
+- Use title/description/keywords to enrich the feature, which would perform better in terms of representing website. Since a website is consist of sevral div sections, which contains texts, images and links. Due to This word focuses on text information, each section can be represented by different embeddings, and ensamble them togather as the feature map. But the potantial risk is the exponential computation consumption, which lowering the effecicency. It is a tradeoff to balance the complexcity and efficiency.
 
 - RNN/LSTM 
 - Due to the limit of pre-trained word-embedding dictionary, some words inevitably don't have the corrresponding word vectors. therefore, radom vectors were assinged and the embedding layer is set to trainable in the CNN model. with the growth of label data, the personalisation can improve the accuray of the model.
