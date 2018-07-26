@@ -5,10 +5,10 @@
 
 ## Requirements
 - Python3
-- tensorflow
-- jieba
-- scikit-learn
-- codecs
+- Tensorflow
+- Jieba
+- Scikit-learn
+- Codecs
 
 ## WHAT I DO
 - use the pre-trained Chinese word vector provided by Shen Li, Zhe Zhao, Renfen Hu, Wensi Li, Tao Liu, Xiaoyong Du, Analogical Reasoning on Chinese Morphological and Semantic Relations, ACL 2018.
