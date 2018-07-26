@@ -11,7 +11,7 @@
 
 - Top 20 tag words are used to classification so far, try to extract more words is worth trying
 - Use title/description/keywords to enrich the feature, which would perform better in terms of representing website.
-- rnn/LSTM 
+- RNN/LSTM 
 
 ## Reference
 - Dennybritz's Blog  http://www.wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tensorflow/
