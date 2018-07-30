@@ -17,6 +17,8 @@
 
 - Slightly changes in codes
 
+<img src="./embedding.gif"><br>
+
 ## FURTURE
 
 - Top 20 tag words are used to classification so far, try to extract more words 
