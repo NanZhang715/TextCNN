@@ -17,6 +17,9 @@
 
 - Slightly changes in codes
 
+- Visualize the embedding in Tensorboard
+
+## EMBEDDING VISUALISATION
 <img src="./embedding.gif"><br>
 
 ## FURTURE
