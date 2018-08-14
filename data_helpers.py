@@ -1,4 +1,4 @@
-import jieba.analyse
+import jieba_fast as jieba.analyse
 import codecs
 import numpy as np
 
