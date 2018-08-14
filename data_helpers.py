@@ -73,9 +73,9 @@ def batch_iter(data, batch_size, num_epochs, shuffle=True):
             yield shuffled_data[start_index:end_index]
             
 def load_data(data_file):
-"""
-Loads data from files, extracts tag words
-"""
+    """
+    Loads data from files, extracts tag words
+    """
     # Load data from files
     data = list(codecs.open(data_file, "r", "utf-8").readlines())
     x_text = [
