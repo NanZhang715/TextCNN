@@ -71,5 +71,18 @@ def batch_iter(data, batch_size, num_epochs, shuffle=True):
             start_index = batch_num * batch_size
             end_index = min((batch_num + 1) * batch_size, data_size)
             yield shuffled_data[start_index:end_index]
+            
+def load_data(data_file):
+"""
+Loads data from files, extracts tag words
+"""
+    # Load data from files
+    data = list(codecs.open(data_file, "r", "utf-8").readlines())
+    x_text = [
+        [item for item in jieba.analyse.extract_tags(s, withWeight=False, topK=20, allowPOS=('n', 'v', 'nt', 'vn'))] for
+        s in data]
+
+    return x_text
 
 
+       
