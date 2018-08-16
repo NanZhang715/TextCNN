@@ -10,7 +10,7 @@ def timeit(func):
         stime = time.clock()
         func(*args,**kwargs)
         endtime = time.clock()
-        print("Runtime is {}".format(endtime-stime))
+        print("Runtime is {:.2f}seconds".format(endtime-stime))
         return func(*args,**kwargs)
     return wrapper
 
