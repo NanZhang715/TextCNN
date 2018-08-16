@@ -6,11 +6,13 @@ import time
 
 def timeit(func):
     @wraps(func)
-    def wrapper():
+    def wrapper(*args,**kwargs):
         stime = time.clock()
-        func()
+        func(*args,**kwargs)
         endtime = time.clock()
         print("Runtime is {}".format(endtime-stime))
+        return func(*args,**kwargs)
+    return wrapper
 
 
 def load_data_and_labels(positive_data_file, negative_data_file):
