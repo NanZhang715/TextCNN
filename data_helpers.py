@@ -1,6 +1,16 @@
 import jieba_fast as jieba.analyse
 import codecs
 import numpy as np
+from functools import wraps
+import time
+
+def timeit(func):
+    @wraps(func)
+    def wrapper():
+        stime = time.clock()
+        func()
+        endtime = time.clock()
+        print("Runtime is {}".format(endtime-stime))
 
 
 def load_data_and_labels(positive_data_file, negative_data_file):
@@ -72,6 +82,7 @@ def batch_iter(data, batch_size, num_epochs, shuffle=True):
             end_index = min((batch_num + 1) * batch_size, data_size)
             yield shuffled_data[start_index:end_index]
             
+@timeit           
 def load_data(data_file):
     """
     Loads data from files, extracts tag words
