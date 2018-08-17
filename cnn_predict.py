@@ -32,7 +32,13 @@ tf.flags.DEFINE_string('f', '', 'kernel')
 FLAGS = tf.flags.FLAGS
 
 # Load data
-x_raw = data_helpers.load_data(FLAGS.data_file)
+sql = 'select url, unicode from flfs_copy limit 2000'
+engine = create_engine("mysql+pymysql://root:rzx@1218!@!#@***.***.***.***:51024/funds_task?charset=utf8",echo=True)
+
+data = pd.DataFrame()
+for chunks in pd.read_sql_query(sql,con=engine,chunksize=1000):
+    data=data.append(chunks)
+    
 
 # Map data into vocabulary
 vocab_path = os.path.join("./runs/1532276166/", "vocab")
