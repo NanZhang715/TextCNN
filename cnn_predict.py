@@ -106,7 +106,6 @@ df['tag_words']= df['tag_words'].map(lambda s: ' '.join(s))
 #type(df['update_time'][0])
 type(df['tag_words'][0])
 
-engine = create_engine("mysql+pymysql://root:rzx@1218!@!#@202.108.211.109:51024/funds_task?charset=utf8") 
 pd.io.sql.to_sql(df,
                  name='classifer',
                  con=engine,
