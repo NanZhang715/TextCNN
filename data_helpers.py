@@ -1,4 +1,4 @@
-import jieba_fast as jieba.analyse
+import jieba_fast.analyse as jieba
 import codecs
 import numpy as np
 from functools import wraps
@@ -23,11 +23,11 @@ def load_data_and_labels(positive_data_file, negative_data_file):
     # Load data from files
     positive_examples = list(codecs.open(positive_data_file, "r", "utf-8").readlines())
     positive_examples = [
-        [item for item in jieba.analyse.extract_tags(s, withWeight=False, topK=20, allowPOS=('n', 'v', 'nt', 'vn'))] for
+        [item for item in jieba.extract_tags(s, withWeight=False, topK=20, allowPOS=('n', 'v', 'nt', 'vn'))] for
         s in positive_examples]
     negative_examples = list(codecs.open(negative_data_file, "r", "utf-8").readlines())
     negative_examples = [
-        [item for item in jieba.analyse.extract_tags(s, withWeight=False, topK=20, allowPOS=('n', 'v', 'nt', 'vn'))] for
+        [item for item in jieba.extract_tags(s, withWeight=False, topK=20, allowPOS=('n', 'v', 'nt', 'vn'))] for
         s in negative_examples]
 
     # Combine lists
@@ -92,7 +92,7 @@ def load_data(data_file):
     # Load data from files
     data = list(codecs.open(data_file, "r", "utf-8").readlines())
     x_text = [
-        [item for item in jieba.analyse.extract_tags(s, withWeight=False, topK=20, allowPOS=('n', 'v', 'nt', 'vn'))] for
+        [item for item in jieba.extract_tags(s, withWeight=False, topK=20, allowPOS=('n', 'v', 'nt', 'vn'))] for
         s in data]
 
     return x_text
