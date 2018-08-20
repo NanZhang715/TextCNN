@@ -103,9 +103,9 @@ for data in pd.read_sql_query(sql,con=engine,chunksize=200):
 
 	#Export to db
 	pd.io.sql.to_sql(data,
-	                 name='classifer_v',
+	                 name='表名',
 	                 con=engine,
-	                 schema= 'funds_task',
+	                 schema= '库名',
 	                 if_exists='append',
 	                 chunksize=1000)
 
