@@ -37,7 +37,7 @@ print(stime)
 
 # Load data
 sql = 'select url, unicode from flfs_copy'
-engine = create_engine("mysql+pymysql://root:rzx@1218!@!#@202.108.211.109:51024/funds_task?charset=utf8") 
+engine = create_engine("mysql+pymysql://username:password@***.***.***.***:51024/funds_task?charset=utf8") 
 
 #Process Dataframe 
 for data in pd.read_sql_query(sql,con=engine,chunksize=200):
